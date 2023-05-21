@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.port": 5505,
+    "terminal.integrated.env.osx": {
+        "PATH": "/usr/local/bin:${env:PATH}"
+      }
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/grid.css">
+    <link rel="stylesheet" href="assets/CSS/card.css">
+    <link rel="stylesheet" href="assets/CSS/footer.css">
+    <link rel="stylesheet" href="assets/CSS/register.css">
+    <link rel="stylesheet" href="assets/CSS/parameter.css">
+    <link rel="stylesheet" href="assets/CSS/news.css">
+    <link rel="stylesheet" href="assets/CSS/news.css.map">
+    <link rel="stylesheet" href="assets/CSS/filter.css">
+    <link rel="stylesheet" href="assets/CSS/filter.css.map">
+    <link rel="stylesheet" href="assets/CSS/animation.css">
+    <link rel="stylesheet" href="assets/CSS/banner.css">
+    <link rel="stylesheet" href="https://unitop.com.vn/font-awesome.html/">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-Jdx8E6zQ2e2xPfCwR6R8VjWZ5v5SBl9RYRtRJ8VpBmGvrrL4rsqJc4jb0hnfWjI/txbJX9Gtu0/8zNnHsgIjFw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  </head>
+  <div class="background-image myGif">
+    <video playsinline autoplay muted loop>
+      <source src="https://giant.gfycat.com/AccurateLimpingAchillestang.mp4"
+        type="video/mp4">
+    </video>
+  </div>
+  <x-feathericon-facebook />
+    <!-- https://funix.edu.vn/wp-content/themes/anothemes/images/grid-lights.mp4 -->
+    <body>
+      <div class="container">
+        <!-- <div class="bg__web" style="width: 100%; display: flex; justify-content: center;">
+      <img src="./assets/img/Capture.png" alt="">
+    </div> -->
+        <div id="mentor">
+          <div class="mentor__title">Hannah là ai?</div>
+          <p class="mentor__content">Quá trình học tập của học viên FUNiX là quá
+            trình tự học rất chủ động và linh
+            hoạt
+            cũng đầy thách thức,
+            sự dìu dắt, tháo gỡ của hannah không những đã giúp các bạn học viên
+            vượt qua được những khó khăn cụ thể
+            trong
+            học tập mà còn giúp các bạn
+            ngày càng tự tin trên con đường trau dồi khả năng tự học. Hannah
+            cũng là tấm gương cổ vũ để các bạn học
+            viên
+            hướng tới và phấn đấu noi theo.</p>
+          <div class="mentor__details">
+            <img src="assets/img/ava.png" alt="" class="mentor__avatar">
+            <div class="mentor__details--information">
+              <div class="mentor__position">
+                <p class="mentor__position-title">Fouder</p>
+                <span><i class="ri-double-quotes-r mentor__position-icon"></i></span>
+              </div>
+              <p class="mentor__name mentor__name-icon">Nguyễn Thành Nam</p>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="drop-down">
+          <div id="lecturers-filter" col_index="room"></div>
+          <div id="lecturers-filter1" col_index="diadiem"></div>
+          <div id="lecturers-filter2" col_index="Monhoc"></div>
+        </div>
+
+        <div class="wrapper">
+          <div id="lecturers-list"></div>
+        </div>
+
+        <nav>
+          <ul class="pagination justify-content-center">
+            <div class="page">
+              <div id="pagination-container"></div>
+            </div>
+
+          </ul>
+        </nav>
+        <div>
+          <h1 class="card__title">Hannah mới gia nhập</h1>
+          <div class="wrapper">
+            <div id="lecturers-listNew"></div>
+          </div>
+
+        </div>
+        
+
+        <div id="news">
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"></script>
+            
+          <div class="wrapper">
+            
+            <div class="background">
+              <!-- <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132206/news-slider/background.webp" alt=""> -->
+            </div>
+            <div class="item-bg" onmouseover="toggleFixedPosition(this)"></div>
+            
+            <div class="news-slider">
+              <h1 class="news-date__title" style="color: white; justify-content: center; text-align: center;">Tin tức</h1>
+              <div class="news-slider__wrp swiper-wrapper">
+                <div class="news-slider__item swiper-slide">
+                  <a href="#" class="news__item">
+                    <div class="news-date">
+                      <span class="news-date__title">24 Tháng 5</span>
+                      <!-- <span class="news-date__txt">Tháng 5</span> -->
+                    </div>
+                    <div class="news__title">
+                      Tin tức về hoạt động
+                    </div>
+
+                    <p class="news__txt">
+                      Với các hoạt động sôi nổi được tổ chức và sự giúp sức của
+                      các Hannah nên hoạt động kết quả với 1 kết quả hơn cả mong
+                      đợi
+                      Với các hoạt động sôi nổi được tổ chức và sự giúp sức của
+                      các Hannah nên hoạt động kết quả với 1 kết quả hơn cả mong
+                      đợi
+                    </p>
+
+                    <div class="news__img">
+                      <img
+                        src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-2.webp"
+                        alt="news">
+                    </div>
+                  </a>
+                </div>
+
+                <div class="news-slider__item swiper-slide">
+                  <a href="#" class="news__item">
+                    <div class="news-date">
+                      <span class="news-date__title">25</span>
+                      <!-- <span class="news-date__txt">May</span> -->
+                    </div>
+                    <div class="news__title">
+                      Lorem Ipsum Dolor Sit Amed
+                    </div>
+
+                    <p class="news__txt">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s...
+                    </p>
+
+                    <div class="news__img">
+                      <img
+                        src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-3.webp"
+                        alt="news">
+                    </div>
+                  </a>
+                </div>
+
+                <div class="news-slider__item swiper-slide">
+                  <a href="#" class="news__item">
+                    <div class="news-date">
+                      <span class="news-date__title">26</span>
+                      <!-- <span class="news-date__txt">May</span> -->
+                    </div>
+                    <div class="news__title">
+                      Lorem Ipsum Dolor Sit Amed
+                    </div>
+
+                    <p class="news__txt">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s...
+                    </p>
+
+                    <div class="news__img">
+                      <img
+                        src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-4.webp"
+                        alt="news">
+                    </div>
+                  </a>
+                </div>
+
+                <div class="news-slider__item swiper-slide">
+                  <a href="#" class="news__item">
+                    <div class="news-date">
+                      <span class="news-date__title">27</span>
+                      <!-- <span class="news-date__txt">May</span> -->
+                    </div>
+                    <div class="news__title">
+                      Lorem Ipsum Dolor Sit Amed
+                    </div>
+
+                    <p class="news__txt">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s...
+                    </p>
+
+                    <div class="news__img">
+                      <img
+                        src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-2.webp"
+                        alt="news">
+                    </div>
+                  </a>
+                </div>
+
+                <div class="news-slider__item swiper-slide">
+                  <a href="#" class="news__item">
+                    <div class="news-date">
+                      <span class="news-date__title">28</span>
+                      <!-- <span class="news-date__txt">May</span> -->
+                    </div>
+                    <div class="news__title">
+                      Lorem Ipsum Dolor Sit Amed
+                    </div>
+
+                    <p class="news__txt">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s...
+                    </p>
+
+                    <div class="news__img">
+                      <img
+                        src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-5.webp"
+                        alt="news">
+                    </div>
+                  </a>
+                </div>
+
+                <div class="news-slider__item swiper-slide">
+                  <a href="#" class="news__item">
+                    <div class="news-date">
+                      <span class="news-date__title">29</span>
+                      <!-- <span class="news-date__txt">May</span> -->
+                    </div>
+                    <div class="news__title">
+                      Lorem Ipsum Dolor Sit Amed
+                    </div>
+
+                    <p class="news__txt">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s...
+                    </p>
+
+                    <div class="news__img">
+                      <img
+                        src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-4.webp"
+                        alt="news">
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="news-slider__ctr">
+
+                <div class="news-slider__arrows">
+                  <button class="news-slider__arrow news-slider-prev">
+                    <span class="icon-font">
+                      <svg class="icon icon-arrow-left"><use
+                          xlink:href="#icon-arrow-left"></use></svg>
+                    </span>
+                  </button>
+                  <div class="news-slider__pagination"></div>
+                  <button class="news-slider__arrow news-slider-next">
+                    <span class="icon-font">
+                      <svg class="icon icon-arrow-right"><use
+                          xlink:href="#icon-arrow-right"></use></svg>
+                    </span>
+                  </button>
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <svg hidden="hidden">
+            <defs>
+              <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+                <title>arrow-left</title>
+                <path d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328
+                  0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056
+                  2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896
+                  0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216
+                  0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704
+                  1.696s0.224 1.248 0.704 1.696z"></path>
+              </symbol>
+              <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+                <title>arrow-right</title>
+                <path d="M31.296
+                  14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896
+                  2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368
+                  2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896
+                  0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696
+                  0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448
+                  0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"></path>
+              </symbol>
+            </defs>
+          </svg>
+
+
+        </div>
+        <div id="parameter">
+          <h2 class="parameter__title">Hannah thông qua số lần hỗ trợ 1-1 trực
+            tiếp năm 2022</h2>
+          <div class="row parameter__list">
+            <div class="col col-half s-col-full mt-16 parameter__form ">
+              <div class="parameter__student">
+                <span><i class="ri-user-star-line parameter--icon"></i></span>
+                <h1>1,245</h1>
+              </div>
+              <p class="parameter--desc">Hannah, với hơn 300 Hannah thường xuyên
+                hoạt động để hổ trợ 5,438 học viên FUNiX đang theo học.</p>
+            </div>
+            <div class="col col-half s-col-full mt-16 parameter__form">
+              <div class="parameter__QAA">
+                <span><i class="ri-user-3-line parameter--icon"></i></span>
+                <h1>145,120</h1>
+              </div>
+              <p class="parameter--desc">Phiên hỏi đáp 1-1 với Hannah qua tổng
+                đài
+                tương đương 53,610 giờ</p>
+            </div>
+            <div class="col col-half s-col-full mt-16 parameter__form">
+              <div class="register__star">
+                <span><i class="ri-star-line parameter--icon"></i></span>
+                <h1>19,150</h1>
+              </div>
+              <p class="parameter--desc">Buổi cập nhật tiến độ, giải đáp thắc
+                mắc,
+                tư vấn hướng nghiệp 1-1 với Hannah qua Zoom tương đương 4,208.5
+                giờ</p>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div id="register">
+
+          <div class="row register-content">
+
+            <div class="col col-half s-col-full register-info">
+              <h1 class="register-title">Đăng ký trở thành Hannah FUNiX</h1>
+              <button class="register-button">Đăng Ký Ngay</button>
+            </div>
+            <div>
+            </div>
+            <div class="col col-half s-col-full register-form">
+              <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+                integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+              <div class="animation-wrapper">
+                <div class="stagger-visualizer">
+                  <div class="cursor color-while"></div>
+                  <div class="dots-wrapper"></div>
+                </div>
+              </div>
+              <div class="register-img">
+
+                  <video playsinline autoplay muted loop class="register-img-details">
+                    <source
+                      src="https://funix.edu.vn/wp-content/themes/anothemes/images/grid-lights.mp4"
+                      type="video/mp4">
+                  </video>
+              </div>
+            </div>
+          </div>
+          <div class="html1" style="margin: 50px 0;">
+            <div class="radio-container">
+              <input type="radio" name="slider" id="radio-item-1" checked>
+              <input type="radio" name="slider" id="radio-item-2">
+              <input type="radio" name="slider" id="radio-item-3">
+              <div class="radio-cards">
+                <label class="radio-card" for="radio-item-1"
+                  id="radio-song-1">
+                  <img src="./assets/img/funix.png" alt=""
+                  class="radio-img">
+                </label>
+                <label class="radio-card" for="radio-item-2"
+                  id="radio-song-2">
+                  <img class="radio-img"
+                    src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+                    alt="song">
+                </label>
+                <label class="radio-card" for="radio-item-3"
+                  id="radio-song-3">
+                  <img class="radio-img"
+                    src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                    alt="song">
+                </label>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="box-container">
+
+            <div class="box ">
+              <h3>Logo</h3>
+              <p class="box-info"><i class="ri-map-pin-line footer__icon"></i>Tầng
+                0, tòa nhà FPT, 17 Duy Tân, Q.Cầu Giấy,
+                Hà Nội</p>
+              <p class="box-info"><i class="ri-mail-line footer__icon"></i>
+                info@funix.edu.vn</p>
+              <p class="box-info"><i class="ri-phone-line footer__icon"></i>
+                0123456789 (Zalo, Viber)</p>
+            </div>
+            <div class="box">
+              <h3>Về Chúng Tôi</h3>
+              <a href="#">Giới thiệu FUNiX</a>
+              <a href="#">Đội ngũ Hannah</a>
+              <a href="#">Hợp tác</a>
+              <a href="#">Liên Hệ</a>
+              <a href="#">FAQ</a>
+            </div>
+            <div class="box">
+              <h3>Học gì ở FUNiX</h3>
+              <a href="#">Chương trình học</a>
+              <a href="#">Học Phí</a>
+              <a href="#">Cách học</a>
+              <a href="#">Đời sống sinh viên</a>
+            </div>
+            <div class="box">
+              <h3>Tin tức</h3>
+              <a href="#">Học đường</a>
+              <a href="#">Sự kiện</a>
+            </div>
+          </div>
+
+
+          <div class="credit ">
+            <p class="credit__content m-6"> © 2023. All rights reserved.
+              FUNiX
+              - A member of FPT Corporation -
+              funix.edu.vn
+            </p>
+            <span class="">
+              <i class="ri-discord-fill"></i>
+              <i class="ri-twitter-line"></i>
+              <i class="ri-youtube-line"></i>
+            </span>
+          </div>
+        </div>
+        <div class="modal js-modal">
+          <div id="lecturers-listClick"></div>
+        </div>
+      </div>
+
+
+      <!-- jQuery -->
+      <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <!-- Popper.js -->
+      <script
+        src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script
+        src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <!-- Swiper library -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+
+  </html>
